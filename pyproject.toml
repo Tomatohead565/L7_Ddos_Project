@@ -6,7 +6,7 @@ authors = ["Kirill <orlov.kirill13@gmail.com>"]
 packages = [{ include = "src"}]
 
 [tool.poetry.dependencies]
-python = "3.10.14"
+python = "3.12.3"
 requests = "*"
 pandas = "~1.2"
 scikit-learn = "~1.1.1"
