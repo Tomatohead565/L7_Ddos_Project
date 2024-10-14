@@ -161,9 +161,29 @@ DDoS атаки не всегда подразумевают большой об
 
 ## Окей, а нам чё делать?
 
-1. Найти датасеты с нормальным и аномальным трафиком
+1. Найти датасеты с нормальным и аномальным трафиком / утилиты для нагрузочного тестирования (некоторые датасеты: https://www.kaggle.com/datasets/devendra416/ddos-datasets, https://github.com/julesrubin/Machine-Learning-for-DDoS-attacks-detection
+
+тестеры: https://habr.com/ru/companies/otus/articles/697494/ тут их целых 15 шутк, https://yandex.cloud/ru/services/load-testing?utm_source=yandex-s&utm_medium=cpc&utm_campaign=Search_RU_KBRS_LGEN_NEW_LoadTesting_cloud%7C86525352&utm_content=5177534614%7C&utm_term=%D1%82%D0%B5%D1%81%D1%82+load%7C13943446438&yclid=7318302269921558527&utm_referrer=https%3A%2F%2Fyandex.ru%2F&utm_referrer=https%3A%2F%2Fweb.telegram.org%2F тестер от яндекса, https://github.com/denji/awesome-http-benchmark проектик на гитхабе)
 2. Обработка данных и выявление признаков определения запросов злоумышленника (IP адреса, cookie, количество запросов в n времени и т.п.)
 3. Выбор системы машинного обучения (интегрированные системы обнаружения вторжения IDS (алгоритмы кластеризации и классификации), сетевые поведенческие анализы NBA(обучение без учителя, например кластеризация), свёрточные нейронные сети CNN и рекурентные нейронные сети RNN, анализ логов и прогнозирование (обучение с учителем, например деревья решений или случайный лес)) 
 4. Оптимизация. См строчку 1 этого файла
 5. Наблюдаем за процессом и правим неточности/ошибки
+
 Готово, можно и задудосить РКН (шутка, я наверное так не буду делать, если мне вернут дискорд)
+
+## Ссылки и литература
+1. https://nubes.ru/blog/articles/attack_l7
+2. https://habr.com/ru/companies/slurm/articles/674218/
+3. https://pythonist.ru/obnaruzhenie-ddos-atak-pri-pomoshhi-ai/ (в создании статьи не участвовал, но есть очень интересная инфа с кодом и графиками)
+4. https://cyberleninka.ru/article/n/effektivnye-podhody-k-obnaruzheniyu-i-predskazaniyu-ddos-atak-s-ispolzovaniem-mashinnogo-obucheniya/viewer
+5. https://habr.com/ru/articles/701482/
+6. https://habr.com/ru/articles/709294/
+
+## Отдельно ссылки на всякие ddos проекты
+1. https://github.com/lulzddos/Lulzddos (прога для атаки)
+2. https://github.com/mCaptcha/mCaptcha (капча)
+3. https://github.com/AltraMayor/gatekeeper (защита от ddos раз)
+4. https://github.com/tempesta-tech/tempesta (защита от ddos два)
+5. https://github.com/duy13/vDDoS-Protection (защита от ddos три)
+6. https://github.com/topics/ddos-protection (тут можно будет ещё поискать проектики)
+7. http://dspace.bsu.edu.ru/bitstream/123456789/37669/1/SHepelev_Issledovanie_19.pdf (большая статья со стресстестами)
