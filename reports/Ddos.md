@@ -187,3 +187,5 @@ DDoS атаки не всегда подразумевают большой об
 5. https://github.com/duy13/vDDoS-Protection (защита от ddos три)
 6. https://github.com/topics/ddos-protection (тут можно будет ещё поискать проектики)
 7. http://dspace.bsu.edu.ru/bitstream/123456789/37669/1/SHepelev_Issledovanie_19.pdf (большая статья со стресстестами)
+8. https://cyberleninka.ru/article/n/issledovanie-obnaruzheniya-ddos-atak-s-ispolzovaniem-mashinnogo-obucheniya (статья поменьше с исследованием борьбы с помощью ML)
+9. https://github.com/julesrubin/Machine-Learning-for-DDoS-attacks-detection (я в Париже https://youtu.be/LtKG8H347Fs?si=na9gu2hqyrJ_k3AP)
