@@ -1,0 +1,11 @@
+
+
+services:
+  db_auth:
+    container_name: pg
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_PASSWORD=4955
+      - POSTGRES_USER=erelis
+    image: postgres:latest
