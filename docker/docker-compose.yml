@@ -1,11 +1,11 @@
-
-
 services:
   db_auth:
-    container_name: pg
+    restart: always
+    
+    container_name: ${POSTGRES_CONTAINER}
     ports:
-      - "5433:5432"
+      - ${POSTGRES_PORT}
     environment:
-      - POSTGRES_PASSWORD=4955
-      - POSTGRES_USER=erelis
-    image: postgres:latest
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_USER=${POSTGRES_USER}
+    image: postgres:${POSTGRES_IMAGE}

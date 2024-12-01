@@ -11,6 +11,7 @@ env/
 build/
 develop-eggs/
 dist/
+docker/compose/
 downloads/
 eggs/
 .eggs/
@@ -18,6 +19,7 @@ lib/
 lib64/
 parts/
 sdist/
+venv/
 var/
 *.egg-info/
 .installed.cfg
@@ -46,3 +48,7 @@ var/
 
 # Mypy cache
 .mypy_cache/
+
+#Chaos files
+sandbox.py
+sandbox.ipynb
