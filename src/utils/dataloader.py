@@ -1,17 +1,17 @@
 from typing import Any, Generator
 
 import psycopg2
-from decouple import Config
+from decouple import config
 
 
 class Dataloader:
     def __init__(
         self,
-        dbname: str = Config("DB_NAME"),
-        user: str = Config("POSTGRES_USER"),
-        password: str = Config("POSTGRES_PASSWORD"),
-        host: str = Config("DB_HOST"),
-        port: int = Config("DB_PORT"),
+        dbname: str = config("DB_NAME"),
+        user: str = config("POSTGRES_USER"),
+        password: str = config("POSTGRES_PASSWORD"),
+        host: str = config("DB_HOST"),
+        port: int = config("DB_PORT"),
     ) -> None:
         self.dbname = dbname
         self.user = user
@@ -41,6 +41,8 @@ class Dataloader:
         self, table_name: str, batch_size: int = 1000
     ) -> Generator[list[tuple[Any, ...]], None, None]:
         try:
+            if not self.connect():
+                raise Exception("Could not connect to the database.")
             cursor = self.conn.cursor()
             offset = 0
 
