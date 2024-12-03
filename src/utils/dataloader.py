@@ -1,17 +1,17 @@
 from typing import Any, Generator
 
 import psycopg2
-from decouple import config
+from decouple import Config
 
 
 class Dataloader:
     def __init__(
         self,
-        dbname: str = config("DB_NAME"),
-        user: str = config("POSTGRES_USER"),
-        password: str = config("POSTGRES_PASSWORD"),
-        host: str = config("DB_HOST"),
-        port: int = config("DB_PORT"),
+        dbname: str = Config("DB_NAME"),
+        user: str = Config("POSTGRES_USER"),
+        password: str = Config("POSTGRES_PASSWORD"),
+        host: str = Config("DB_HOST"),
+        port: int = Config("DB_PORT"),
     ) -> None:
         self.dbname = dbname
         self.user = user
